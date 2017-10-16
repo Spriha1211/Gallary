@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>intern online-task|schoolguru</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style type="text/css">
+    .co {
+	color: #FFF;
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+        
+      <div class="row search-row">
+            <span class="co">Search</span>:
+<input type="text" class="filtr-search" name="filtr-search" data-search>
+        </div>
+
+        <div class="row">
+            <div class="filtr-container">
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 5" data-sort="Luminous night">
+                    <img class="img-responsive" src="img/nature_2.jpg" alt="sample image">
+                    <span class="item-desc">Luminous night</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 4" data-sort="City wonders">
+                    <img class="img-responsive" src="img/city_3.jpg" alt="sample image">
+                    <span class="item-desc">city wonders</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="In production">
+                    <img class="img-responsive" src="img/industrial_1.jpg" alt="sample image">
+                    <span class="item-desc">in production</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3, 4" data-sort="Industrial site">
+                    <img class="img-responsive" src="img/industrial_3.jpg" alt="sample image">
+                    <span class="item-desc">industrial site</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
+                    <img class="img-responsive" src="img/nature_1.jpg" alt="sample image">
+                    <span class="item-desc">peaceful lake</span>
+      
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Dreamhouse">
+                    <img class="img-responsive" src="img/nature_3.jpg" alt="sample image">
+                    <span class="item-desc">dreamhouse</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="filterizr/jquery.filterizr.min.js"></script>
+    <script src="js/controls.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.filtr-container').filterizr();
+        });
+    </script>
+  </body>
+</html>
